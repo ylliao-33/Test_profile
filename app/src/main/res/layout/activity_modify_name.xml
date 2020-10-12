@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modify_name">
+
+    //Title layout
+    <LinearLayout
+        android:id="@+id/layout_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center|top"
+        android:background="#FFEFD5">
+
+        <ImageView
+            android:id="@+id/iv_just_return"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:src="@drawable/return_arrow" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center"
+            android:text="Editing Page"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_save_modified_name"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Finish"
+            android:textColor="@android:color/black"
+            android:textSize="19dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_entered_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter your nick name here."
+        android:textSize="25dp"
+        />
+
+</LinearLayout>

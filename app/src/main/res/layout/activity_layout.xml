@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEFD5">
+
+    //Title layout
+    <LinearLayout
+        android:id="@+id/layout_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center|top"
+        android:background="#FFEFD5">
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:src="@drawable/return_arrow"/>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center"
+            android:text="Editing Page"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="@android:color/black"
+            android:textSize="19dp"/>
+    </LinearLayout>
+
+    //Profile layout
+    <LinearLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:background="#ffffff"
+            android:src="@drawable/android_profile"
+            />
+
+        <TextView
+            android:id="@+id/tv_changeProfile"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Click me to modify"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    //Personal information layout one by one
+    //ID
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="ID :"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_ID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="123456"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#111111"
+            android:paddingRight="24dp"
+            />
+    </LinearLayout>
+
+    //Cutting line
+    <View
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#cccccc"/>
+
+    //Nick name
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Name :"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Nick"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#111111"
+            />
+        <ImageView
+            android:id="@+id/modify_name"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_right"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    //Cutting line
+    <View
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#cccccc"/>
+
+    //Email
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Email :"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="123456@qq.com"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#111111"
+            />
+
+        <ImageView
+            android:id="@+id/modify_email"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_right"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    //Cutting line
+    <View
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#cccccc"/>
+    //City
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Region :"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_region"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Sydney"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#111111"
+            />
+        <ImageView
+            android:id="@+id/modify_region"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_right"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    //Cutting line
+    <View
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#cccccc"/>
+
+    //City
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Major :"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_major"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Master of IT"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#111111"
+            />
+        <ImageView
+            android:id="@+id/modify_major"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_right"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    //Cutting line
+    <View
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#cccccc"/>
+
+</LinearLayout>
